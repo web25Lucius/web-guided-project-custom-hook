@@ -7,6 +7,11 @@ const useForm = () => {
     setFirstName(e.target.value);
   };
 
+  const clearForm = (e) => {
+    e.preventDefault();
+    setFirstName("");
+  };
+
   return [firstName, setFirstName, handleChanges];
 };
 

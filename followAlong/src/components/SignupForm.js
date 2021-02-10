@@ -32,11 +32,6 @@ export default function SignupForm() {
     alert(firstName);
   };
 
-  const clearForm = (e) => {
-    e.preventDefault();
-    setFirstName("");
-  };
-
   return (
     <div p={2} className="form">
       <form onSubmit={handleSubmit}>

@@ -8,12 +8,19 @@ const useForm = () => {
   });
 
   const handleChanges = (e) => {
-    setValues(e.target.value);
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const clearForm = (e) => {
     e.preventDefault();
-    setValues("");
+    setValues({
+      firstName: "",
+      lastName: "",
+      email: "",
+    });
   };
 
   return [values, handleChanges, clearForm];

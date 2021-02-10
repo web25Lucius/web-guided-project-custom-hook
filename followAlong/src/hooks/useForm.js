@@ -12,7 +12,7 @@ const useForm = () => {
     setFirstName("");
   };
 
-  return [firstName, setFirstName, handleChanges, clearForm];
+  return [firstName, handleChanges, clearForm];
 };
 
 export default useForm;

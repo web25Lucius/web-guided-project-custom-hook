@@ -40,8 +40,6 @@ export default function SignupForm() {
     alert(firstName);
   };
 
-  // localStorage to persist the from data
-
   return (
     <div p={2} className="form">
       <form onSubmit={handleSubmit}>

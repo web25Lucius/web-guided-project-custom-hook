@@ -2,6 +2,7 @@ import { useState } from "react";
 
 const useForm = (initialValues) => {
   // we could call "useLocalStorage()";
+  // composition - component/logic(hook)
   const [values, setValues] = useState(initialValues);
 
   const handleChanges = (e) => {

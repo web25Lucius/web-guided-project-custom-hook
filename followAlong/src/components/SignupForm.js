@@ -29,7 +29,7 @@ export default function SignupForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(formValues.firstName);
+    alert(firstName);
   };
 
   return (

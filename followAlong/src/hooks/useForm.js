@@ -7,7 +7,7 @@ const useForm = () => {
     setFirstName(e.target.value);
   };
 
-  return [firstName, setFirstName];
+  return [firstName, setFirstName, handleChanges];
 };
 
 export default useForm;

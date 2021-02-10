@@ -32,13 +32,15 @@ const initialValues = {
 export default function SignupForm() {
   const classes = useStyles();
   const [{ firstName, lastName, email }, handleChanges, clearForm] = useForm(
-    intialValues
+    initialValues
   );
 
   const handleSubmit = (e) => {
     e.preventDefault();
     alert(firstName);
   };
+
+  // localStorage to persist the from data
 
   return (
     <div p={2} className="form">

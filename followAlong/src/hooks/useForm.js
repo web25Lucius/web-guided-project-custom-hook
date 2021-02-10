@@ -1,18 +1,18 @@
 import { useState } from "react";
 
 const useForm = () => {
-  const [firstName, setFirstName] = useState("");
+  const [value, setValue] = useState("");
 
   const handleChanges = (e) => {
-    setFirstName(e.target.value);
+    setValue(e.target.value);
   };
 
   const clearForm = (e) => {
     e.preventDefault();
-    setFirstName("");
+    setValue("");
   };
 
-  return [firstName, handleChanges, clearForm];
+  return [value, handleChanges, clearForm];
 };
 
 export default useForm;
